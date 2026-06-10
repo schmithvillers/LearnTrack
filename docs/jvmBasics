@@ -1,0 +1,71 @@
+# JVM Basics
+
+## What is JDK?
+
+JDK (Java Development Kit) is a software package used by developers to create, compile, and run Java applications. It includes the Java compiler (`javac`), debugging tools, libraries, and the Java Runtime Environment (JRE).
+
+In simple terms, the JDK provides everything needed to develop Java programs.
+
+---
+
+## What is JRE?
+
+JRE (Java Runtime Environment) provides the environment required to run Java applications. It contains the JVM and the core Java libraries needed for execution.
+
+Users who only want to run Java applications need the JRE, while developers need the JDK.
+
+---
+
+## What is JVM?
+
+JVM (Java Virtual Machine) is the component responsible for executing Java bytecode. It acts as an intermediary between Java programs and the operating system.
+
+The JVM allows the same Java program to run on different operating systems without modification, provided a compatible JVM is available.
+
+---
+
+## What is Bytecode?
+
+When a Java source file (`.java`) is compiled using the Java compiler (`javac`), it is converted into a platform-independent file called bytecode (`.class`).
+
+Example:
+
+```text id="d0r6za"
+HelloWorld.java
+      |
+      | javac
+      v
+HelloWorld.class (Bytecode)
+```
+
+The JVM reads and executes this bytecode.
+
+---
+
+## What Does "Write Once, Run Anywhere" Mean?
+
+One of Java's main advantages is its platform independence. A Java program is compiled into bytecode instead of machine-specific code. Since the JVM is available on multiple operating systems such as Windows, macOS, and Linux, the same compiled Java program can run on any platform without needing to be rewritten.
+
+This concept is known as **"Write Once, Run Anywhere" (WORA)**. Developers write the code once, compile it once, and then execute it on any system that has a compatible JVM installed.
+
+---
+
+## Java Execution Flow
+
+```text id="jicjmu"
+Java Source Code (.java)
+           |
+           v
+       javac Compiler
+           |
+           v
+      Bytecode (.class)
+           |
+           v
+Java Virtual Machine (JVM)
+           |
+           v
+        Program Output
+```
+
+This process enables Java applications to be portable, secure, and platform-independent.
